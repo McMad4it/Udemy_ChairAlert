@@ -1,0 +1,29 @@
+Price of an item in a web-store for a user under a price limit
+
+
+Creates an alert-->gives us an email-->gives us a price and item URL-->we check the price
+                                                                                |
+                                                                                |
+                                                                                |
+              repeat every 10 minutes<----notify user through email<---if the price is <limit
+
+Alert----> Email, price limit, item URL
+Store -----> How to check items prices
+Users----> Emails (for notification), name/password/username?
+Item-----> Name, price (load from website), URL associated
+
+
+
+SHA512 of 123 = 3c9909afec25354d551dae21590bb26e38d53f2173b8d3dc3eee4c047e7ab1c1eb8b85103e3be7ba613b31bb5c9c36214dc9f14a42fd7a2fdb84856bca5c44c2
+hashed value of the SHA512 of 123 (above) = $pbkdf2-sha512$25000$DUEohTAGwHgPodRayzkHQA$MpwsLRiVDP.t8XQ/BOQy6Oy.Mr7U5ibo59Z1BYxW.W5oYjVO5yRHxzBltI6Oeb6c5UhfBBN1vlbdW1W0nD5mrw
+
+Regular Expresssion for email address (no other text around it):
+^[\w-]+@([\w-]+\.)+[\w]+$
+
+
+
+> use fullstack
+> db.users.insert({"_id": "1234", "email": "test@test.com", "password": "$pbkdf2-sha256$7665$WKs1ZkwJ4ZxT6t07R0iplQ$ZKfMMAMzKxH64g.3XwaFONAlVwoZf76dWdqW6uSlQtE"})
+> db.stores.insert({"_id": "a980989112d746a793448e706a6ad976", "query": {"class": "now-price", "itemprop": "price"}, "tag_name": "span", "name": "John Lewis", "url_prefix": "http://www.johnlewis.com"})
+> db.items.insert({"_id": "d5527d22c0a74a8199fbbc0aab440463", "url": "http://www.johnlewis.com/john-lewis-the-basics-dexter-low-wide-bookcase/p562355", "price": 45, "name": "Dexter" })
+> db.alerts.insert({"_id": "896045e647084cacb37a702f418be707", "price_limit": 100, "last_checked": ISODate("2016-02-09T10:35:31.542Z"), "item_id": "d5527d22c0a74a8199fbbc0aab440463", "user_email": "test@test.com"})
