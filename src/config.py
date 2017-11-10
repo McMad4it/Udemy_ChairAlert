@@ -1,6 +1,6 @@
 __author__ = 'neil'
 
-DEBUG = False
+DEBUG = True
 ADMINS = frozenset([
     "neil@test.test"
 ])
