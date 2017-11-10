@@ -1,6 +1,6 @@
 from functools import wraps
 from flask import session, url_for, redirect, request
-from Section5.src.app import app
+from src.app import app
 
 __author__ = 'neil'
 

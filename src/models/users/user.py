@@ -1,9 +1,9 @@
 import uuid
-from Section5.src.common.utils import Utils
-from Section5.src.common.database import Database
-from Section5.src.models.alerts.alert import Alert
-import Section5.src.models.users.errors as UserErrors
-import Section5.src.models.users.constants as UserConstants
+from src.common.utils import Utils
+from src.common.database import Database
+from src.models.alerts.alert import Alert
+import src.models.users.errors as UserErrors
+import src.models.users.constants as UserConstants
 
 __author__ = 'neil'
 

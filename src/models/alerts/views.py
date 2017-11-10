@@ -1,7 +1,7 @@
-from Section5.src.models.alerts.alert import Alert
-from Section5.src.models.items.item import Item
+from src.models.alerts.alert import Alert
+from src.models.items.item import Item
 from flask import Blueprint, render_template, request, session, url_for, redirect
-import Section5.src.models.users.decorators as user_decorators
+import src.models.users.decorators as user_decorators
 
 __author__ = 'neil'
 

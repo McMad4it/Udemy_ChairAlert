@@ -1,7 +1,7 @@
 import uuid
-from Section5.src.common.database import Database
-import Section5.src.models.items.constants as ItemsConstants
-from Section5.src.models.stores.store import Store
+from src.common.database import Database
+import src.models.items.constants as ItemsConstants
+from src.models.stores.store import Store
 
 __author__ = 'neil'
 

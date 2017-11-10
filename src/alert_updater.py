@@ -1,5 +1,5 @@
-from Section5.src.common.database import Database
-from Section5.src.models.alerts.alert import Alert
+from src.common.database import Database
+from src.models.alerts.alert import Alert
 
 __author__ = 'neil'
 

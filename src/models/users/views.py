@@ -1,8 +1,8 @@
 from werkzeug.utils import redirect
 from flask import Blueprint, url_for, request, session, render_template
-from Section5.src.models.users.errors import UserError
-from Section5.src.models.users.user import User
-import Section5.src.models.users.decorators as user_decorators
+from src.models.users.errors import UserError
+from src.models.users.user import User
+import src.models.users.decorators as user_decorators
 
 __author__ = 'neil'
 

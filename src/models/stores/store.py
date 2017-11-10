@@ -1,7 +1,7 @@
 import uuid
-import Section5.src.models.stores.constants as StoreConstants
-import Section5.src.models.stores.errors as StoreErrors
-from Section5.src.common.database import Database
+import src.models.stores.constants as StoreConstants
+import src.models.stores.errors as StoreErrors
+from src.common.database import Database
 
 __author__ = 'neil'
 

@@ -1,9 +1,9 @@
 import datetime
 import uuid
 import requests
-from Section5.src.common.database import Database
-import Section5.src.models.alerts.constants as AlertConstants
-from Section5.src.models.items.item import Item
+from src.common.database import Database
+import src.models.alerts.constants as AlertConstants
+from src.models.items.item import Item
 
 __author__ = 'neil'
 
