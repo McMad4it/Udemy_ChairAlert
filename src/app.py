@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from Section5.src.common.database import Database
+from src.common.database import Database
 
 __author__ = 'neil'
 
